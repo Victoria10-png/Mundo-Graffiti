@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNDO GRAFFITI</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #007BFF;
+        }
+        .section {
+            display: none;
+            padding: 2rem;
+            text-align: center;
+        }
+        .section.active {
+            display: block;
+        }
+        #inicio-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        #sidebar {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            box-sizing: border-box;
+            height: 100%;
+            position: sticky;
+            top: 0;
+        }
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #sidebar li {
+            margin: 15px 0;
+        }
+        #sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        #sidebar img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        #main-content {
+            width: 80%;
+            padding: 1rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenidos al Mundo Graffiti</h1>
+        <p>Navega por las diferentes secciones</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#" onclick="showSection('inicio')">Inicio</a>
+        <a href="#" onclick="showSection('historia')">historia</a>
+        <a href="#" onclick="showSection('galeria')">Galería</a>
+        <a href="#" onclick="showSection('Tipos')">Tipos</a>
+        <a href="#" onclick="showSection('contacto')">Contacto</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección 1: Inicio -->
+        <section id="inicio" class="section active">
+            <div id="inicio-container">
+                <!-- Sidebar de redes sociales -->
+                <div id="sidebar">
+                    <h3>DATO CURIOSO</h3>
+                    <ul>
+                        <p>Un dato curioso del Graffiti</p>
+                    </ul>
+                        <p>En los años 60 comienza la historia del grafiti moderno.
+
+                            Este fenómeno se originó en Filadelfia cuando un joven adolescente llamado Darryl McCray, considerado como el creador del grafiti, bombardeó todos los lugares posibles de Filadelfia con el tag “CornBread”, un apodo que le venía de su época en el reformatorio.</p>                 
+                </div>
+                <!-- Contenido principal -->
+                <div id="main-content">
+                    <h2>Inicio</h2>
+                    <p>¡Bienvenido al mundo del Graffiti! Explora y conoce más sobre el arte urbano.</p>
+                    <img src="https://i.pinimg.com/originals/46/1c/5a/461c5a9052b8f456ad79a1ef86ea11c2.gif" alt="Descripción del GIF">
+                    <p>El grafiti es una forma de arte visual que se realiza en espacios públicos y que se caracteriza por: Su uso de colores llamativos, Sus dibujos intrincados, Sus mensajes políticos o sociales, Su capacidad de expresar pensamientos y sentimientos. </p>
+                    <p>  El grafiti es una manifestación cultural que ha sido objeto de debate durante mucho tiempo. Si bien se lo relaciona con la rebeldía y el vandalismo, también puede ser considerado una forma de arte legítima. 
+                        Para ser considerado arte, el grafiti debe cumplir con ciertos requisitos, como:</p> 
+                        <p>Ser original, tanto en el mensaje como en la técnica</p>
+                        Transmitir un mensaje de rebeldía
+                        Tener un alto valor pictórico
+                        Para evitar ser considerado vandalismo, el grafiti debe realizarse en espacios habilitados para el arte urbano o con el permiso del dueño de los espacios. 
+                        El grafiti se puede realizar mediante aerosol, stencil o gigantografía. Un tipo de grafiti es el bubble letters o letra pompa, que consiste en letras redondas y llenas, normalmente fáciles de leer. 
+                        Los romanos también eran aficionados al grafiti, y se pueden encontrar muestras de ello en lugares como el Domus Aurea del emperador Nerón en Roma o en la mansión de Adriano en Tivoli. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Sobre mí -->
+        <section id="historia" class="section">
+            <h2>HISTORIA</h2>
+            <p>El grafiti, también conocido como arte urbano, tiene sus orígenes en el Imperio romano, cuando se usaban pintadas en las paredes con fines satíricos o críticos. Sin embargo, el grafiti moderno se considera que surgió en los años 60 en Filadelfia y Nueva York.</p>
+            <img src="https://i.gifer.com/VLYm.gif" alt="Descripción del GIF">
+            <p>Algunos hitos de la historia del grafiti son:</p>
+                <p>Darryl McCray</p>
+                <p>Se le considera el creador del grafiti moderno por bombardear Filadelfia con el tag "CornBread".</p> 
+                <p>Dimitraki</p>
+                Un joven mensajero de origen griego que se hizo famoso en Nueva York con el nombre Taki 183. 
+                New York Times
+                En 1971, el periódico publicó un reportaje sobre el grafiti, lo que dio lugar a una explosión de este arte en Estados Unidos. 
+                Henry Chalfant y Martha Cooper
+                Dos fotógrafos neoyorquinos que documentaron la escena ferroviaria de Nueva York en su libro Subway Art, que se convirtió en una referencia para grafiteros de todo el mundo. 
+                Movimiento del grafiti artístico
+                A partir de la década de 1990, el grafiti se convirtió en una expresión artística legítima y se reconoció mundialmente. 
+                El grafiti es una forma de arte visual que se caracteriza por el uso de colores llamativos, dibujos intrincados y mensajes políticos o sociales. Los grafiteros exponen sus obras en galerías y museos de todo el mundo. </p>
+        </section>
+
+        <!-- Sección 3: Galería -->
+        <section id="galeria" class="section">
+            <h2>Galería</h2>
+            <p>Mira algunas imágenes de estos ejemplos:</p>
+            <img src="https://cdn.pixabay.com/photo/2015/10/16/22/22/tags-991923_640.jpg" alt="Imagen de ejemplo" style="width:100%; max-width:500px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHlmu0XwEXxSLjypPwKmWewvk1pFepBltGhm0lOpKrO_TVWXdu32AZ6PMXRXTS3wjNNB4&usqp=CAU" alt="Imagen de ejemplo" style="width:100%; max-width:500px;">
+            <img src="https://i.pinimg.com/222x/1d/94/e6/1d94e67165e152b41d8b2a704836b333.jpg" alt="Imagen de ejemplo" style="width:100%; max-width:500px;">
+            <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/s5fcbbf9183892db8/image/id49d741863dab301/version/1705538225/image.jpg" alt="Imagen de ejemplo" style="width:100%; max-width:500px;">
+        </section>
+
+        <!-- Sección 4: Servicios -->
+        <section id="Tipos" class="section">
+            <h2>Tipos</h2>
+            <p>Estos son algunos de los servicios que ofrezco:</p>
+            <ul>
+                <p>TAGGERS</p>
+                    <p>Es el tipo de graffiti más común y antiguo, en el que los artistas escriben sus nombres</p>
+                <p>ART GRAFFITI</p>
+                    <p>Asociado a la cultura hip hop de los años 70 y 80 en Estados Unidos. </p>
+                <p>BUBBLE LETTERS</p>
+                    <p>Letras redondas y infladas, que suelen ser fáciles de leer y tener un color de relleno y otro en el borde. </p>
+                <p>THROW-UP</p>
+                    <p>Un estilo rápido y efectivo, con letras infladas y fáciles de leer. Se utiliza para cubrir grandes áreas en poco tiempo. </p>
+                <p>LATRINALIA</p>
+                    <p>También llamado "grafiti privado", se realiza en los baños, en las paredes, puertas y espejos. Puede contener dibujos, palabras, poesía o reflexiones personales.</p>
+                <p>DIRTY</p>
+                    <p>El estilo más reciente, en el que las formas se deforman y no se entremezclan.</p>  
+                <p>Estos son algunos ejemplos</p>  
+            </ul>
+            <img src="https://i.gifer.com/NVyE.gif" alt="Imagen de ejemplo" style="width:100%; max-width:1000px;">
+        </section>
+
+        <!-- Sección 5: Contacto -->
+        <section id="contacto" class="section">
+            <h2>Contacto</h2>
+            <p>Si deseas saber mas sobre el graffiti, escríbeme a:</p>
+            <p><a href="mundograffiti@gmail.com">mundograffiti@gmail.com</a></p>
+            <p>Encuéntrame en redes sociales:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61556827953629&mibextid=ZbWKwL" target="_blank">Facebook</a>
+                <a href="https://x.com/DonasOski?t=8Rjzyhl1FoEdcJPLfcQTwg&s=08" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/donas_oski?igsh=MXMyeHhiYnRmMHE1Yg==" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@corazn.quebrado0?_t=ZM-8ssiYMybvJl&_r=1" target="_blank">TikTok</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Mundo Graffiti - Todos los derechos reservados a: Victoria Paredes Rodriguez</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Función para mostrar la sección seleccionada
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
